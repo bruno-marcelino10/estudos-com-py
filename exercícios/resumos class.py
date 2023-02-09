@@ -1,51 +1,67 @@
-# CLASSES
-class Carro:
-    #modelo empresa ano
-    def __str__(self): # O que será mostrado quando printarmos o objeto
-        return(self.modelo + " 9021// " + self.empresa + " " + str(self.ano))
+#### -- Resumo - Classes e Métodos (POO) -- ####
 
-    def __init__(self, modelo, empresa, ano): # Requisitos para criar uma classe
-        self.modelo = modelo # Atributos da classe que podem ser chamados com objeto.atributo
-        self.empresa = empresa
+class Carro:
+    '''
+    A classe é chamada de "módulo" ou "objeto". Ela é o fundamento principal do paradigma "POO", e com ela podemos
+    organizar as tarefas de forma que:
+
+    - certas funções criadas dentro da classe só funcionam em atributos dessa classe;
+    - podemos importar classes de outros scripts para o "__main__", que realizará as operações de maneira ordenada.
+
+    '''
+
+    cor = "Prata" # atributo da classe que é inicializado como o mesmo para qualquer instância dessa classe.
+
+    # __str__: define o que será mostrado quando printarmos o objeto
+    def __str__(self):
+        return(self.modelo + " 9021 // " + str(self.ano))
+
+    # __init__: define os parâmetros que devem ser inseridos para criar uma instância dessa classe
+    def __init__(self, modelo, ano):
+        # Estes serão os atributos específicos para cada instância dessa classe.
+        self.modelo = modelo
         self.ano = ano
 
-    def mudar_ano(self, ano_novo): # Função (método) que só se aplica aos elementos da classe
-        self.ano = ano_novo # alterando novamente um atributo da classe
+    # Os "métodos" são funções que só se aplicam aos objetos desta classe
+    def mudar_ano(self, ano_novo):
+        self.ano = ano_novo # altera um atributo da classe
+        print("Ano alterado! Ano novo =", ano_novo) # é interessante incluir prints para facilitar a correção de erros
 
-#
-carro = Carro("Focus", "Ford", 2006) # Criando um objeto do tipo Carro
-print(carro) # retorna algo
+    @classmethod # são métodos da classe, que não têm acesso a nenhuma instância, somente atributos da classe
+    def mudar_cor(cls, cor_nova):
+        cls.cor = cor_nova
+        print("Cor alterada! Cor nova =", cor_nova)
 
-print(carro.ano) # retorna um atributo do carro
+    @staticmethod # são métodos normais criados dentro da classe, não possuem acesso a nenhum atributo ou instância
+    def info_carro():
+        print("É um veículo automotor de 4 rodas!")
 
-carro.mudar_ano(2001) # retorna um método aplicável ao carro 
-print(carro.ano) # a função alterou o atributo do carro 
+    # GETTERS E SETTERS: pega um atributo (get) e o linka a uma função que o altera (setter) automaticamente
+    # @property
+    # def ano(self):
+    #     return self._ano
+    #
+    # @ano.setter
+    # def ano(self, ano_inserido):
+    #     if type(ano_inserido) == type(int):
+    #         self._ano = ano_inserido
+    #     else:
+    #         print("ano errado!")
 
-# DIFERENÇA ENTRE FUNÇÕES COM E SEM CLASSES ASSOCIADAS
-#funções sem classes
-def somar(a,b):
-    return(a+b)
+carro = Carro("Focus", 2006) # Criando um objeto (instância) da classe Carro
 
-def multiplicar(a,b):
-    return(a*b)
+print(carro) # retorna o que foi definido em __str__
+print(carro.ano) # retorna um atributo do Carro
+carro.mudar_ano(2001) # aplica um método ao Carro
 
-#com classes
-class Calculadora:
-    
-    def somarc(self,a,b):
-        return(a+b)
+carro.mudar_cor("azul") # aplicando método de classe
+Carro.info_carro() # aplicando método estático
 
-    def multiplicarc(self,a,b):
-        return(a*b)
-        
-    a = 6
-    b = 8 #só existem dentro da classe
+'''
+HERANÇA: é o processo de se criar uma classe maior que contém métodos utilizados por outras classes "menores".
 
-calculadora = Calculadora()
+As classes menores podem "herdar" os métodos e atributos da primeira, e assim conter somente os métodos que são
+específicos delas. 
 
-print(calculadora.somarc(5,7))
-
-print(calculadora.a)
-
-calculadora.a = 20
-print(calculadora.multiplicarc(calculadora.a,calculadora.b))
+Podemos chamar o método __init__ da classe maior utilizando super().__init__(atributos) nas classes menores.
+'''
