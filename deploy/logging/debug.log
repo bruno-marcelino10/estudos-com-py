@@ -1,0 +1,26 @@
+2023-11-20 23:56:55,824 - INFO - Mensagem de Log
+2023-11-21 00:05:43,923 - INFO - Mensagem de Log
+2023-11-21 00:05:49,009 - INFO - Mensagem de Log
+2023-11-21 00:16:31,485 - 3305298085.py - INFO - Mensagem de Log
+2023-11-21 00:21:35,514 - C:\Users\Bruno Marcelino\AppData\Local\Temp\ipykernel_18652\1663243660.py - INFO - Mensagem de Log
+2023-11-21 00:33:55,296 - C:\Users\Bruno Marcelino\AppData\Local\Temp\ipykernel_18652\110478437.py - DEBUG - Mensagem de Log
+2023-11-21 00:33:55,296 - C:\Users\Bruno Marcelino\AppData\Local\Temp\ipykernel_18652\110478437.py - INFO - Mensagem de Log
+2023-11-21 00:33:55,297 - C:\Users\Bruno Marcelino\AppData\Local\Temp\ipykernel_18652\110478437.py - WARNING - Mensagem de Log
+2023-11-21 00:33:55,297 - C:\Users\Bruno Marcelino\AppData\Local\Temp\ipykernel_18652\110478437.py - ERROR - Mensagem de Log
+2023-11-21 00:33:55,304 - C:\Users\Bruno Marcelino\AppData\Local\Temp\ipykernel_18652\110478437.py - CRITICAL - Mensagem de Log
+2023-11-21 00:34:26,035 - 1785611368.py - INFO - Mensagem de Log
+2023-11-21 00:34:26,081 - 110478437.py - DEBUG - Mensagem de Log
+2023-11-21 00:34:26,081 - 110478437.py - INFO - Mensagem de Log
+2023-11-21 00:34:26,081 - 110478437.py - WARNING - Mensagem de Log
+2023-11-21 00:34:26,082 - 110478437.py - ERROR - Mensagem de Log
+2023-11-21 00:34:26,082 - 110478437.py - CRITICAL - Mensagem de Log
+2023-11-21 00:38:29,142 - 675409489.py - INFO - mensagem
+2023-11-21 00:38:46,620 [INFO] mensagem
+2023-11-21 00:39:41,780 - [3045734537.py] - [INFO] - mensagem
+2023-11-21 00:40:51,524 - [383394172.py] - [INFO] - mensagem
+2023-11-21 00:43:18,112 [INFO] [1081043072.py] - mensagem
+2023-11-21 00:43:55,366 [INFO] 3172626156.py - mensagem
+2023-11-21 00:45:48,697 [INFO] 2887450692.py - Mensagem de Log
+2023-11-21 00:45:48,699 [WARNING] 2887450692.py - Mensagem de Log
+2023-11-21 00:45:48,701 [ERROR] 2887450692.py - Mensagem de Log
+2023-11-21 00:45:48,703 [CRITICAL] 2887450692.py - Mensagem de Log Bruno
