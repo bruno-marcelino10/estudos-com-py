@@ -10,3 +10,7 @@ Busco conteúdos de diversas fontes para tornar o aprendizado mais dinâmico, po
 * Para aprender a fazer Web Scraping, o curso Python Web Scraping é uma boa fonte que aprofunda nos conceitos importantes (https://www.udemy.com/course/python-web-scraping/)
 
 * O app SoloLearn também é muito bom, e lançou recentemente alguns cursos voltados para a área de dados também. Caso queira me seguir, basta abrir o link no app: (https://www.sololearn.com/Profile/17772495/?ref=app)
+
+* O site refactoring.guru explica bastante sobre os *design patterns*, então vale a pena dar uma olhada lá também.
+
+* Alguns resumos conceituais foram escritos em arquivos do Notion. Em breve, os adicionarei aqui, em formato PDF. 
